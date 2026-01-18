@@ -1,0 +1,25 @@
+{
+    "expo": {
+      "name": "Balance",
+      "slug": "balance-wellness",
+      "version": "0.1.0",
+      "orientation": "portrait",
+      "userInterfaceStyle": "light",
+      "assetBundlePatterns": [
+        "**/*"
+      ],
+      "ios": {
+        "supportsTabletMode": false,
+        "bundleIdentifier": "com.balance.wellness"
+      },
+      "android": {
+        "package": "com.balance.wellness"
+      },
+      "web": {
+        "bundler": "metro"
+      },
+      "plugins": [
+        "expo-router"
+      ]
+    }
+  }

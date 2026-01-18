@@ -1,336 +1,243 @@
-# 📚 BALANCE APP — COMPLETE RESOURCES
+# 🧬 Balance — Mental & Physical Wellness Tracker
 
-## YOU HAVE EVERYTHING YOU NEED
+A production-grade Expo React Native app for tracking and improving mental and physical wellness through intelligent scoring and personalized insights.
 
-In `/mnt/user-data/outputs/` you now have:
-
-### 🎯 THE APP
-- **`balance-app/`** — Complete React Native project
-  - All source code
-  - All configuration
-  - Ready to customize
-
-### 📖 SETUP GUIDES (Pick One)
-
-| File | Purpose | Length | Best For |
-|------|---------|--------|----------|
-| **START_HERE.md** | Master overview | 2 min | Everyone |
-| **QUICK_REFERENCE.txt** | Wallet card | 1 min | Quick lookup |
-| **SIMPLE_SETUP.md** | Step-by-step visual | 5 min | Visual learners |
-| **COPY_PASTE_SETUP.md** | Terminal commands | 5 min | Developers |
-| **FILE_SETUP_GUIDE.md** | Complete file setup | 10 min | Detail-oriented |
-| **SETUP_INSTRUCTIONS.md** | Full guide with troubleshooting | 20 min | Everything |
-| **SETUP_INDEX.md** | Master index | 5 min | Navigation |
-| **COMMANDS_REFERENCE.md** | All terminal commands | Reference | Daily use |
-| **COMPLETE_SUMMARY.md** | Visual summary | 5 min | Overview |
-| **QUICK_START.md** | Fastest path | 2 min | Impatient |
-
-### 📚 DOCUMENTATION (In balance-app/)
-
-| File | Purpose |
-|------|---------|
-| **README.md** | Project overview & architecture |
-| **DEVELOPMENT_ROADMAP.md** | Step-by-step build plan |
-| **QUICK_START.md** | Quick reference |
+**Status:** Hackathon MVP Ready  
+**Framework:** React Native + Expo  
+**State:** Zustand + SQLite  
+**UI Aesthetic:** Refined Organic Minimalism  
 
 ---
 
-## YOUR PATH (Choose One)
+## 🚀 Quick Start
 
-### 🚀 I Just Want It Running
-**Time: 15 minutes**
+### Prerequisites
+- Node.js 18+
+- Expo CLI (`npm install -g expo-cli`)
+- iOS Simulator or Android Emulator (or physical device)
 
-1. Read: `START_HERE.md`
-2. Copy-paste the commands
-3. Done!
-
-### 👶 I'm New to All This
-**Time: 20 minutes**
-
-1. Read: `SIMPLE_SETUP.md`
-2. Create folders manually
-3. Copy files
-4. Run commands
-
-### 👨‍💻 I Know Terminal
-**Time: 10 minutes**
-
-1. Read: `COPY_PASTE_SETUP.md`
-2. Paste commands
-3. Done!
-
-### 🤓 I Want to Understand Everything
-**Time: 30 minutes**
-
-1. Read: `SETUP_INSTRUCTIONS.md`
-2. Follow every step
-3. Learn the architecture
-4. Ready to build
-
----
-
-## THE THREE COMMANDS YOU NEED
+### Installation
 
 ```bash
-# 1. Create all folders at once
-mkdir -p app/(tabs) components state utils assets/fonts core/{scoring,collectors,ml,storage}
+# Clone or navigate to the project
+cd balance-app
 
-# 2. Install dependencies
+# Install dependencies
 npm install
 
-# 3. Start the app
+# Start the dev server
 npm start
-# Then press 'w' for web
-```
 
-**That's it. Everything else is just details.**
+# Open in simulator
+# iOS: Press 'i'
+# Android: Press 'a'
+# Web: Press 'w'
+```
 
 ---
 
-## FILE STRUCTURE YOU'RE CREATING
+## 📱 App Structure
 
 ```
 balance-app/
 ├── app/
-│   ├── _layout.tsx
-│   └── (tabs)/
-│       ├── _layout.tsx
-│       ├── index.tsx
-│       ├── trends.tsx
-│       ├── journey.tsx
-│       └── settings.tsx
+│   ├── (tabs)/           # Tab navigation layout
+│   │   ├── index.tsx     # Home — Dual score cards
+│   │   ├── trends.tsx    # Weekly trends & analytics
+│   │   ├── journey.tsx   # Gamification & streaks
+│   │   └── settings.tsx  # Privacy & data controls
+│   └── _layout.tsx       # Root layout
+│
 ├── components/
-│   └── ScoreCard.tsx
+│   └── ScoreCard.tsx     # Reusable score display with progress ring
+│
+├── core/                 # (Coming next iteration)
+│   ├── collectors/       # Data ingestion
+│   ├── scoring/          # Score computation
+│   ├── ml/               # Adaptive learning
+│   └── storage/          # Local-first persistence
+│
 ├── state/
-│   └── store.ts
+│   └── store.ts          # Zustand store with actions
+│
 ├── utils/
-│   ├── theme.ts
-│   ├── time.ts
-│   └── constants.ts
-├── assets/fonts/ (download Geist fonts here)
-├── core/ (for next features)
-│   ├── scoring/
-│   ├── collectors/
-│   ├── ml/
-│   └── storage/
-├── package.json
-├── app.json
-├── tsconfig.json
-└── .gitignore
-```
-
-**11 files to copy, 10 folders to create**
-
----
-
-## WHAT YOU'LL SEE
-
-A beautiful wellness app with:
-- 📊 Dual score cards (Mental & Physical)
-- 📈 Weekly trends
-- 🎮 Gamification (streaks, achievements)
-- ⚙️ Privacy controls
-- 🎨 Professional UI
-
----
-
-## NEXT AFTER SETUP
-
-```
-Setup Complete ✅
-      ↓
-Read: balance-app/README.md
-      ↓
-Read: balance-app/DEVELOPMENT_ROADMAP.md
-      ↓
-Build: Scoring Engine (2-3 hours)
-      ↓
-Build: Data Collection (2-3 hours)
-      ↓
-Build: Storage & Trends (2-3 hours)
-      ↓
-Polish: UI & Demo Prep (1-2 hours)
-      ↓
-SHIP IT! 🚀
+│   ├── theme.ts          # Design tokens
+│   ├── time.ts           # Date & time utilities
+│   └── constants.ts      # App configuration
+│
+└── assets/               # Fonts, icons, images
 ```
 
 ---
 
-## ALL THE COMMANDS
+## 🎨 Design System
+
+### Colors
+- **Mental Balance:** `#7C83FD` (Calm Blue-Purple)
+- **Physical Balance:** `#2DD4A4` (Fresh Teal)
+- **Background:** `#FAFBFC` (Very Light Gray)
+- **Text Primary:** `#1A202C` (Dark Gray)
+
+### Typography
+- **Display Font:** Geist (SemiBold, Bold)
+- **Body Font:** Geist (Regular, Medium)
+- **Sizes:** H1 (32px) → XS (12px)
+
+### Spacing & Radius
+- **Spacing Scale:** 4, 8, 16, 24, 32, 48px
+- **Border Radius:** 8, 12, 16, 20, 9999px (full)
+- **Shadows:** Subtle sm, md, lg elevation
+
+---
+
+## 🧪 Current Features (Implemented)
+
+✅ **Home Screen**
+- Dual score cards (Mental & Physical)
+- Circular progress visualization
+- Daily insight & metrics
+- Streak badge
+
+✅ **Navigation**
+- Tab-based UI (Home, Trends, Journey, Settings)
+- Icon-based buttons with Lucide React Native
+
+✅ **Gamification**
+- Streak tracking
+- Achievement system (6 badges)
+- Progress levels
+
+✅ **Settings**
+- Privacy & data controls
+- Notification preferences
+- Data export/delete
+- Ethics statement
+
+✅ **State Management**
+- Zustand store with actions
+- Type-safe interfaces
+- Mock data ready
+
+---
+
+## 🔧 Next Steps (Iteration Order)
+
+### Step 1: Scoring Engine
+```bash
+# Build core/scoring/mental.ts & physical.ts
+# Implement rule-based score calculation
+# Connect to home screen
+```
+
+### Step 2: Data Collection
+```bash
+# Build core/collectors/ modules
+# Device metrics (screen time, usage patterns)
+# Simulated OS data (with clear labeling for judges)
+```
+
+### Step 3: Local Storage
+```bash
+# Implement SQLite schema
+# Daily metrics persistence
+# History aggregation
+```
+
+### Step 4: Trends & Analytics
+```bash
+# Add react-native-chart-kit integration
+# Weekly/monthly aggregation
+# Fill out trends.tsx
+```
+
+### Step 5: Adaptive Scoring
+```bash
+# User feedback collection
+# Weight personalization
+# Optional: TensorFlow.js integration
+```
+
+---
+
+## 📊 Key Architecture Decisions
+
+### Local-First, Privacy-First
+- All data stored on-device (SQLite + Secure Store)
+- No backend, no accounts, no cloud sync
+- Clear privacy controls in Settings
+
+### Rule-Based Scoring (Explainable)
+- Transparent calculation rules (judges will love this)
+- Deterministic, auditable, non-discriminatory
+- Upgradeable to adaptive/ML without data leaks
+
+### Minimal & Focused UI
+- Two core metrics (Mental + Physical)
+- Gamification layers (streaks, achievements)
+- No metric overload or surveillance vibes
+
+---
+
+## 🎯 Judge Talking Points
+
+1. **Ethical Design**
+   - Privacy-first architecture
+   - On-device ML only
+   - No data collection beyond what user volunteers
+
+2. **Technical Strength**
+   - Production-grade TypeScript + React Native
+   - Clean architecture (collectors, scoring, ML layers)
+   - Scalable state management
+
+3. **User Experience**
+   - Refined, organic design language
+   - Dual-metric balance (mental ↔ physical)
+   - Gamification that motivates without punishing
+
+4. **Hackathon Feasibility**
+   - Complete MVP in single iteration
+   - Step-by-step build plan
+   - Minimal dependencies, maximum control
+
+---
+
+## 🚢 Deployment (Post-Hackathon)
 
 ```bash
-# Setup
-cd balance-app
-mkdir -p app/(tabs) components state utils assets/fonts core/{scoring,collectors,ml,storage}
-npm install
+# Build for iOS
+eas build --platform ios
 
-# Running
-npm start              # Start dev server
-npm run ios            # iOS Simulator
-npm run android        # Android Emulator
-npm run web            # Web Browser
+# Build for Android
+eas build --platform android
 
-# Debugging
-npm start -- --clear   # Clear cache
-npm start -- --port 8082  # Different port
-npm audit              # Check vulnerabilities
-npx tsc --noEmit       # Check TypeScript
-
-# Maintenance
-npm update             # Update packages
-npm uninstall <pkg>    # Remove package
-npm list               # List installed packages
+# Submit to stores
+eas submit
 ```
 
 ---
 
-## WHAT IF...
+## 📝 License
 
-| Problem | Solution |
-|---------|----------|
-| "Module not found" | `npm install && npm start -- --clear` |
-| "Port in use" | `npm start -- --port 8082` |
-| "Fonts not loading" | Download from Google Fonts |
-| "App won't start" | `npm start -- --clear` |
-| "Node not found" | Install from nodejs.org |
-| "npm not found" | Reinstall Node.js |
+MIT — Build on this, extend it, ship it.
 
 ---
 
-## BROWSER TABS YOU SHOULD HAVE OPEN
+## 🤝 Contributing
 
-1. This resources file
-2. Your setup guide (START_HERE.md or similar)
-3. balance-app/README.md (after setup)
-4. balance-app/DEVELOPMENT_ROADMAP.md (after setup)
+Questions or improvements? This is your blueprint — adapt and make it your own.
 
 ---
 
-## TIME INVESTMENT
+## 💡 Ideas for Extended Development
 
-- **Reading guides:** 5-10 minutes
-- **Creating folders:** 5 minutes
-- **Copying files:** 5 minutes
-- **npm install:** 2-3 minutes
-- **First npm start:** 2 minutes
-- **Seeing the app:** Instant
-- **TOTAL:** 15-25 minutes
-
----
-
-## BEFORE YOU START
-
-Verify you have:
-- ✅ Node.js 18+ installed
-- ✅ balance-app folder downloaded
-- ✅ 2GB free disk space
-- ✅ Text editor (VS Code recommended)
-- ✅ Terminal/PowerShell access
+- Wearable integration (Apple Watch, Wear OS)
+- Cloud sync (optional, fully encrypted)
+- AI-powered reflections (on-device)
+- Integration with Apple Health / Google Fit
+- Social challenges (privacy-preserving)
+- Coaching modules (adaptive, personalized)
 
 ---
 
-## SUCCESS CHECKLIST
-
-After setup, you have:
-- ✅ All folders created
-- ✅ All files copied
-- ✅ npm install completed
-- ✅ App running in browser
-- ✅ Can navigate between tabs
-- ✅ Can toggle settings
-- ✅ See the home screen with scores
-
----
-
-## RESOURCE ORGANIZATION
-
-**For Getting Started:**
-1. `START_HERE.md` (begin here!)
-2. `SIMPLE_SETUP.md` (visual guide)
-3. `QUICK_START.md` (fastest path)
-
-**For Setup Details:**
-1. `FILE_SETUP_GUIDE.md` (file placement)
-2. `COPY_PASTE_SETUP.md` (terminal)
-3. `SETUP_INSTRUCTIONS.md` (complete)
-
-**For Reference:**
-1. `COMMANDS_REFERENCE.md` (all commands)
-2. `QUICK_REFERENCE.txt` (wallet card)
-3. `SETUP_INDEX.md` (master index)
-
-**For Understanding:**
-1. `COMPLETE_SUMMARY.md` (visual summary)
-2. `README.md` (in balance-app/)
-3. `DEVELOPMENT_ROADMAP.md` (what to build)
-
----
-
-## YOUR NEXT 30 MINUTES
-
-| Time | Action |
-|------|--------|
-| 0-5 min | Choose your guide & read it |
-| 5-10 min | Create folders |
-| 10-15 min | Copy files |
-| 15-18 min | Download fonts (optional) |
-| 18-21 min | `npm install` |
-| 21-25 min | `npm start` |
-| 25-30 min | See the app! |
-
----
-
-## YOU NOW HAVE
-
-✅ Complete React Native project  
-✅ Production-grade code  
-✅ Multiple setup guides  
-✅ Complete documentation  
-✅ Clear build roadmap  
-✅ Everything needed to succeed  
-
----
-
-## THE SETUP IS EASY
-
-The hard part is done (I created the code).
-
-Your part is easy:
-1. Create folders (click)
-2. Copy files (drag & drop)
-3. Run `npm install` (automatic)
-4. Run `npm start` (one command)
-
----
-
-## YOU'VE GOT THIS
-
-Seriously. You have:
-- Professional code
-- Multiple guides
-- Complete documentation
-- Clear next steps
-- Everything to build a real app
-
-**15 minutes from now, you'll have a working wellness app.**
-
----
-
-## START HERE
-
-Pick one:
-- 🚀 **I'm in a hurry** → `START_HERE.md`
-- 📚 **I want details** → `SIMPLE_SETUP.md`
-- 👨‍💻 **I know terminal** → `COPY_PASTE_SETUP.md`
-
----
-
-## GOOD LUCK
-
-You're about to build something real.
-
-Make us proud! 🚀
-
----
-
-**Questions? Check the guides. Stuck? Read troubleshooting. Ready? Start now!**
+Happy hacking! 🚀

@@ -1,0 +1,83 @@
+# Dependencies
+node_modules/
+yarn.lock
+package-lock.json
+pnpm-lock.yaml
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# Build outputs
+dist/
+build/
+.expo/
+.expo-shared/
+*.jsbundle
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.history/
+
+# OS-specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Testing
+coverage/
+.nyc_output/
+
+# Miscellaneous
+.cache/
+*.bak
+temp/
+tmp/
+
+# Expo specific
+.expo-shared/
+.env*.local
+
+# TypeScript
+*.tsbuildinfo
+dist/
+
+# Mobile app binaries (if building locally)
+ios/
+android/
+
+# Generated files
+.gradle/
+.m2/
+
+# Yarn
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
